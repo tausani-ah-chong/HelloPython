@@ -1,6 +1,12 @@
 def say_hi(name):
-    print("Hi", name)
+    if name == '':
+        print("You haven't entered a name, please try again")
+    else:
+        print("Hi there...")
+        for letter in name:
+            print(letter)
 
 
-say_hi('Sione')
-say_hi('Otalani')
+name = input()
+
+say_hi(name.upper())
