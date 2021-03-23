@@ -37,3 +37,16 @@ class House:
     def clean(self):
         self.house_cleaned = True
         print("Alright looking good!")
+
+
+# Class with constructor
+class Car:
+    def __init__(self, colour, make):
+        self.colour = colour
+        self.make = make
+
+
+red_car = Car("red", "toyota")
+
+print(red_car.make)
+
