@@ -8,9 +8,8 @@ def say_hi(name):
             print(letter)
 
 
-name = input()
-
-say_hi(name.upper())
+# name = input()
+# say_hi(name.upper())
 
 
 # creating class practice
@@ -48,5 +47,20 @@ class Car:
 
 red_car = Car("red", "toyota")
 
-print(red_car.make)
+# print(red_car.make)
 
+
+# play with dictionaries
+carpark = {
+    "toyota": "red",
+    "mercedes": "white",
+    "bmw": "red",
+}
+
+carpark["bmw"] = "black"
+del(carpark["toyota"])
+makes = carpark.keys()
+
+# print(carpark)
+# print(carpark["bmw"])
+# print(makes)
