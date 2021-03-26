@@ -57,6 +57,12 @@ carpark = {
     "bmw": "red",
 }
 
+carpark2 = {
+    "mazda": "black",
+    "mitsubishi": "orange",
+    "holden": "blue",
+}
+
 carpark["bmw"] = "black"
 del(carpark["toyota"])
 makes = carpark.keys()
@@ -64,3 +70,9 @@ makes = carpark.keys()
 # print(carpark)
 # print(carpark["bmw"])
 # print(makes)
+
+# merge dictionaries = {**carpark, **carpark2}
+# in version 3.9 merging dictionaries is simpler
+merged = carpark | carpark2
+for make, colour in merged.items():
+    print(make, ":", colour)
